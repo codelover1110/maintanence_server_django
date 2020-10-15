@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sending emails to user in Python</title>
+</head>
+<style>
+    a {border-width: 1px solid #ccc; padding: 10px;}
+</style>
+
+<body>
+    Hello {{user}},
+    <p>Your account requested to reset your password</p>
+    <p>Click the button below to reset it</p>
+    <a href= {{reset_url}}>Reset Email</a>
+    <p>If you did not requrest a password reset, please ignore this email.</p>
+    <p>This password reset is only valid for the next 24hours</p>
+    <p>{{reset_time}} Maintain APP Support Team</p>
+</body>
+
+</html>
